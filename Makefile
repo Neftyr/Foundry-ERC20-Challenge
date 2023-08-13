@@ -52,3 +52,6 @@ hack:
 
 hackCert:
 	@forge script script/Interactions.s.sol:HackCert $(NETWORK_ARGS)
+
+hackNft:
+	@forge script script/Interactions.s.sol:HackNFT $(NETWORK_ARGS)
