@@ -55,5 +55,10 @@ contract OurTokenTest is StdCheats, Test {
         assertEq(ourToken.balanceOf(bob), BOB_STARTING_AMOUNT - transferAmount);
     }
 
-    // can you get the coverage up?
+    /** @notice CHALLENGE: Can you get the coverage up?
+     * We cannot see coverage of "OurToken.sol" as it has only constructor
+     * We would need to copy ERC20 source contract code into separate contract and test each function by ourselves to get coverage
+     * In this case in `src` folder create contract named `ERC20Coverage.sol` copy source code from ERC20 and fix imports paths
+     * Now try to write some tests for ERC20Coverage.sol and check how far can you push its coverage %
+     */
 }
